@@ -1,0 +1,288 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Team | Taqneeq13.0</title>
+    <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="{% static 'img/tq_logo.png' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="{% static '/css/semantic.min.css' %}"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static '/css/custom.css' %}">
+    <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static '/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+
+    <style>
+        .menu-main::before {
+            top: 28.5%;
+        }
+        
+        .space {
+            z-index: -1;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .rectangle {
+                bottom: 4vw;
+            }
+            #FOOTER {
+                bottom: 13vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="space"></div>
+
+    <div class="headerspace"></div>
+
+    <!-- <a href="#" class="no-line logotype"><img src="{% static 'img/tq_logo.png' %}" alt="" class="tqSmallLogo"></a> -->
+
+    <!-- Menu -->
+    <nav>
+        <div class="menu-main">
+            <div class="bar1 longanimnd"></div>
+            <div class="bar2 longanimnd2"></div>
+            <div class="bar3 longanimnd3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="menuAfterClick1" href="index.html">Home</a></li>
+            <li><a class="menuAfterClick3" href="#">About TQ</a></li>
+            <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
+            <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
+
+            <li><a class="menuAfterClick5" href="#" target="_blank">Contact Us</a></li>
+            <li><a class="menuAfterClick6 menu-hide" href="#">Our Team</a></li>
+            <li><a class="menuAfterClick7 menu-hide" href="#">Sponsors</a></li>
+            <li><a class="menuAfterClick8 menu-hide" href="#">MPSTME Tour</a></li>
+        </ul>
+        <ul class="nav-links-top">
+            <li>
+                <a class="menuAfterClick6" href="#">Our Team</a>
+            </li>
+            <li>
+                <a class="menuAfterClick7" href="#">Sponsors</a>
+            </li>
+        </ul>
+        <ul class="nav-links-bottom">
+            <li>
+                <a class="menuAfterClick8" href="#" style="position: relative; color: white; text-decoration: none; font-size: 2.3vw; font-family: 'Josefin Sans',sans-serif">MPSTME
+                    Tour
+                </a>
+            </li>
+        </ul>
+        <div class="nav-links-top-mid">
+            <a href="#">
+                <div class="logo">
+                    <img class="logoimg animation" src="{% static 'img/tq_logo.png' %}" />
+                </div>
+            </a>
+        </div>
+        <div class="nav-links-bottom-mid">
+            <div id="FOOTER-menu">
+                <div class="socialIcons">
+                    <div class="icons animation">
+                        <img src="{% static 'svg/facebook_icon.svg' %}" target="blank" />
+                    </div>
+                    <div class="icons animation">
+                        <img src="{% static 'svg/envelope.svg' %}" />
+                    </div>
+                    <div class="icons animation">
+                        <img src="{% static 'svg/insta.svg' %}" />
+                    </div>
+                    <div class="icons animation" style="margin-left: 0px;">
+                        <img src="{% static 'svg/youtube.svg' %}" />
+                    </div>
+                </div>
+            </div>
+            <div class="rectangle-menu">
+                <div class="campusam-menu animation">
+                    <a href="#">
+                        Live Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/menu.js' %}"></script>
+    </nav>
+    <!-- Menu -->
+
+    <div class="coresegment">
+        <div class="ui top attached tabular menu" id="coreTab">
+            <a class="item active" data-tab="corename">Super-Core</a>
+            <a class="item" data-tab="corename1">CoreName1</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+            <a class="item" data-tab="corename2">CoreName2</a>
+        </div>
+        <div class="ui bottom attached tab segment active" data-tab="corename">
+            <div class="core-grid">
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Harshit Sharma</div>
+                            <div class="corePost">Sub-Head</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Name</div>
+                            <div class="corePost">Post</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Name</div>
+                            <div class="corePost">Post</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Name</div>
+                            <div class="corePost">Post</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Name</div>
+                            <div class="corePost">Post</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-item animated2s fadeIn">
+                    <div class="coreBlock">
+                        <div class="coreImage">
+                            <div class="coreImg">
+                                <img src="{% static 'img/core/CoreName.jpg' %}">
+                            </div>
+                            <div class="coreGif" style="display:none;">
+                                <img src="{% static 'img/core/coreNameGif.gif' %}">
+                            </div>
+                        </div>
+                        <div class="coreInfo">
+                            <div class="coreName">Name</div>
+                            <div class="corePost">Post</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="corename1">
+            Second
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="corename2">
+            Third
+        </div>
+    </div>
+    <div class="rectangle ">
+        <a href="#">
+            <div class="campusam animation">
+                LIVE UPDATES
+            </div>
+        </a>
+    </div>
+
+    <div id="FOOTER">
+        <div class="icons-center">
+            <div class="icons animation">
+                <a href="#" target="_blank">
+                    <img src="{% static 'svg/facebook_icon.svg' %}">
+                </a>
+            </div>
+            <div class="icons animation">
+                <a href="#" target="_blank">
+                    <img src="{% static 'svg/envelope.svg' %}">
+                </a>
+            </div>
+            <div class="icons animation">
+                <a href="#" target="_blank">
+                    <img src="{% static 'svg/insta.svg' %}">
+                </a>
+            </div>
+            <div class="icons animation" style="margin-left: 0;">
+                <a href="#" target="_blank">
+                    <img src="{% static 'svg/youtube.svg' %}">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="{% static 'js/jquery-3.5.1.min.js' %} "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js " integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin=" anonymous "></script>
+
+<script src="{% static 'js/core.js' %} "></script>
+
+</html>

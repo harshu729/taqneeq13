@@ -1,0 +1,403 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Events | Taqneeq 13.0</title>
+    <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="{% static 'img/tq_logo.png' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="{% static '/css/events.css' %}">
+    <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static '/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static '/css/events-modal.css' %}">
+
+    <link rel="preconnect" href="https://fonts.gstatic. com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .menu-main::before {
+            top: 12%;
+        }
+        
+        .space {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("{% static 'img/17494.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        @media (max-width: 767px) {
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-y: hidden;
+                overflow-x: auto;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="space"></div>
+
+    <h1 class="top-logo">
+        <img src="{% static 'img/taqneeqpatterntq.png' %}" alt="" class="tqFullDesign">
+    </h1>
+
+    <!-- Events-Modal -->
+    <div id="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <a class="close"></a>
+                <div class="deptName">Department Name</div>
+                <div class="allEvents">
+                    <div class="eventBlock">
+                        <div class="eventImage">
+                            <img src="{% static 'img/taqneeqpatterntq.png' %}" style="width: 100%;" class="vCenter">
+                        </div>
+                        <div class="eventName">
+                            <span>StandUp Workshop</span>
+                        </div>
+                        <div class="eventDscp">
+                            <span>Feel like the comedian in your group, have a sense of humor so witty it would put Chandler Bing to shame? Don't worry we got you. The stand-up comedy workshop will sharpen your skills just right so that the next time you tell a story you could put Kenny Sebastian to shame.</span>
+                            <br>
+                        </div>
+                        <div class="eventReg">
+                            <div class="eventRegButton">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventBlock">
+                        <div class="eventImage">
+                            <img src="{% static 'img/taqneeqpatterntq.png' %}" style="width: 100%;" class="vCenter">
+                        </div>
+                        <div class="eventName">
+                            <span>Dance Workshop</span>
+                        </div>
+                        <div class="eventDscp">
+                            <span>Want to dance your way out of stress but do not want to leave your house with the dance workshop we bring dance right to you. With professional dancers coming for the workshop you would never be able to dance anything like this ever again.</span>
+                            <br>
+                        </div>
+                        <div class="eventReg">
+                            <div class="eventRegButton">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventBlock">
+                        <div class="eventImage">
+                            <img src="{% static 'img/taqneeqpatterntq.png' %}" style="width: 100%;" class="vCenter">
+                        </div>
+                        <div class="eventName">
+                            <span>Acting Workshop</span>
+                        </div>
+                        <div class="eventDscp">
+                            <span>Join in for our acting workshop to learn the tips, tricks and get some insider information about acting and dramatics from professional acting coaches coming in to teach you the fine line between good and bad acting.</span>
+                            <br>
+                        </div>
+                        <div class="eventReg">
+                            <div class="eventRegButton">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventBlock">
+                        <div class="eventImage">
+                            <img src="{% static 'img/taqneeqpatterntq.png' %}" style="width: 100%;" class="vCenter">
+                        </div>
+                        <div class="eventName">
+                            <span>Glam Up</span>
+                        </div>
+                        <div class="eventDscp">
+                            <span>Be sure to maintain decorum. Avoid vulgar language and cussing. The videos should be between 5-7 minutes long. The participants should send their entry videos to the email id mentioned below on or before 15th January 2021</span>
+                            <br>
+                        </div>
+                        <div class="eventReg">
+                            <div class="eventRegButton">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventBlock">
+                        <div class="eventImage">
+                            <img src="{% static 'img/taqneeqpatterntq.png' %}" style="width: 100%;" class="vCenter">
+                        </div>
+                        <div class="eventName">
+                            <span>Virtual Housie</span>
+                        </div>
+                        <div class="eventDscp">
+                            <span>Be sure to maintain decorum.Avoid vulgar language and cussing.
+                                </span>
+                            <br>
+                        </div>
+                        <div class="eventReg">
+                            <div class="eventRegButton">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Events-Modal -->
+
+    <!-- Menu -->
+    <nav>
+        <div class="menu-main">
+            <div class="bar1 longanimnd"></div>
+            <div class="bar2 longanimnd2"></div>
+            <div class="bar3 longanimnd3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="menuAfterClick1" href="index.html">Home</a></li>
+            <li><a class="menuAfterClick3" href="#">About TQ</a></li>
+            <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
+            <li><a class="menuAfterClick2" href="#">Event Schedule</a></li>
+
+            <li><a class="menuAfterClick5" href="#" target="_blank">Contact Us</a></li>
+            <li><a class="menuAfterClick6 menu-hide" href="#">Our Team</a></li>
+            <li><a class="menuAfterClick7 menu-hide" href="#">Sponsors</a></li>
+            <li><a class="menuAfterClick8 menu-hide" href="#">MPSTME Tour</a></li>
+        </ul>
+        <ul class="nav-links-top">
+            <li>
+                <a class="menuAfterClick6" href="#">Our Team</a>
+            </li>
+            <li>
+                <a class="menuAfterClick7" href="#">Sponsors</a>
+            </li>
+        </ul>
+        <ul class="nav-links-bottom">
+            <li>
+                <a class="menuAfterClick8" href="#" style="position: relative; color: white; text-decoration: none; font-size: 2.3vw; font-family:'Josefin Sans',sans-serif">MPSTME
+                    Tour
+                </a>
+            </li>
+        </ul>
+        <div class="nav-links-top-mid">
+            <a href="#">
+                <div class="logo">
+                    <img class="logoimg animation" src="{% static 'img/tq_logo.png' %}" />
+                </div>
+            </a>
+        </div>
+        <div class="nav-links-bottom-mid">
+            <div id="FOOTER-menu">
+                <div class="socialIcons">
+                    <div class="icons animation">
+                        <img src="{% static 'svg/facebook_icon.svg' %}" target="blank" />
+                    </div>
+                    <div class="icons animation">
+                        <img src="{% static 'svg/envelope.svg' %}" />
+                    </div>
+                    <div class="icons animation">
+                        <img src="{% static 'svg/insta.svg' %}" />
+                    </div>
+                    <div class="icons animation" style="margin-left: 0px;">
+                        <img src="{% static 'svg/youtube.svg' %}" />
+                    </div>
+                </div>
+            </div>
+            <div class="rectangle-menu">
+                <div class="campusam-menu animation">
+                    <a href="#">
+                        Live Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/menu.js' %}"></script>
+    </nav>
+    <!-- Menu -->
+
+
+    <!-- Planet-LeftMenu -->
+    <input checked='checked' class='planet4' id='uranus' name='planet' type='radio'>
+    <label class='planet-menu uranus' for='uranus'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Uranus
+            </h2>
+            <h3>1.524 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet3' id='neptune' name='planet' type='radio'>
+    <label class='planet-menu neptune' for='neptune'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                neptune
+            </h2>
+            <h3>1 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet2' id='saturn' name='planet' type='radio'>
+    <label class='planet-menu saturn' for='saturn'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Saturn
+            </h2>
+            <h3>0.723 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet1' id='earth' name='planet' type='radio'>
+    <label class='planet-menu earth' for='earth'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Earth
+            </h2>
+            <h3>1 AU</h3>
+        </div>
+    </label>
+    <!-- /Planet-LeftMenu -->
+
+
+    <!-- Solar-System -->
+    <div class='solar'>
+        <div class='solar_systm'>
+            <div class='planet earth'>
+                <div class='moon moon'>
+                    <h3>Moon</h3>
+                    <h2>Moon</h2>
+                </div>
+                <div class='trajectory m'></div>
+                <div class='planet_description earth'>
+                    <h2>Planet</h2>
+                    <h1>Earth</h1>
+                    <p>Earth, our home. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.</p>
+                    <label for='readEarth'>
+                        <a id='two' class="readModal">
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet saturn'>
+                <div class='moon titan'>
+                    <h3>Moon</h3>
+                    <h2>Titan</h2>
+                </div>
+                <div class='moon dione'>
+                    <h3>Moon</h3>
+                    <h2>Dione</h2>
+                </div>
+                <div class='trajectory ti'></div>
+                <div class='trajectory di'></div>
+                <div class='trajectory enc'></div>
+                <div class='planet_description saturn'>
+                    <h2>Planet</h2>
+                    <h1>Saturn</h1>
+                    <p>Saturn is the sixth planet from the sun and the second largest planet in the solar systm. Saturn was the Roman name for Cronus, the lord of the Titans.</p>
+                    <label for='readSaturn'>
+                        <a id='two' class="readModal">
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet neptune'>
+                <div class='moon triton'>
+                    <h3>Moon</h3>
+                    <h2>Triton</h2>
+                </div>
+                <div class='moon proteus'>
+                    <h3>Moon</h3>
+                    <h2>Proteus</h2>
+                </div>
+                <div class='moon nereid'>
+                    <h3>Moon</h3>
+                    <h2>Nereid</h2>
+                </div>
+                <div class='trajectory tri'></div>
+                <div class='trajectory pro'></div>
+                <div class='trajectory ner'></div>
+                <div class='planet_description neptune'>
+                    <h2>Planet</h2>
+                    <h1>Neptune</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    <label for='readNeptune'>
+                        <a id='two' class="readModal">
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet uranus'>
+                <div class='moon miranda'>
+                    <h3>Moon</h3>
+                    <h2>Miranda</h2>
+                </div>
+                <div class='moon ariel'>
+                    <h3>Moon</h3>
+                    <h2>Ariel</h2>
+                </div>
+                <div class='moon umbriel'>
+                    <h3>Moon</h3>
+                    <h2>Umbriel</h2>
+                </div>
+                <div class='trajectory mir'></div>
+                <div class='trajectory ari'></div>
+                <div class='trajectory umb'></div>
+                <div class='planet_description uranus'>
+                    <h2>Planet</h2>
+                    <h1>Uranus</h1>
+                    <p>The first planet to be discovered by scientists. The planet is notable for its dramatic tilt, which causes its axis to point nearly directly at the sun.</p>
+                    <label for='readUranus'>
+                        <a id='two' class="readModal">
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Solar-System -->
+
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="{% static 'js/events-modal.js' %}"></script>
+
+</html>
