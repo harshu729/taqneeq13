@@ -48,7 +48,7 @@
                     </div>
                     <!-- Menu -->
                     <nav>
-                        <div class="menu-main">
+                        <div class="menu-main" onclick="hide()">
                             <div class="bar1 longanimbase longanim"></div>
                             <div class="bar2 longanimbase longanim2"></div>
                             <div class="bar3 longanimbase longanim3"></div>
@@ -56,8 +56,8 @@
                         <ul class="nav-links">
                             <li><a class="menuAfterClick1" href="index.html">Home</a></li>
                             <li><a class="menuAfterClick3" href="#">About TQ</a></li>
-                            <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
-                            <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
+                            <!-- <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
+                            <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li> -->
 
                             <li><a class="menuAfterClick5" href="#" target="_blank">Contact Us</a></li>
                             <li><a class="menuAfterClick6 menu-hide" href="#">Our Team</a></li>
@@ -87,29 +87,10 @@
                             </a>
                         </div>
                         <div class="nav-links-bottom-mid">
-                            <div id="FOOTER-menu">
-                                <div class="socialIcons">
-                                    <div class="icons animation">
-                                        <img src="{% static 'svg/facebook_icon.svg' %}" target="blank" />
-                                    </div>
-                                    <div class="icons animation">
-                                        <img src="{% static 'svg/envelope.svg' %}" />
-                                    </div>
-                                    <div class="icons animation">
-                                        <img src="{% static 'svg/insta.svg' %}" />
-                                    </div>
-                                    <div class="icons animation" style="margin-left: 0px;">
-                                        <img src="{% static 'svg/youtube.svg' %}" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rectangle-menu">
-                                <div class="campusam-menu animation">
-                                    <a href="#">
-                        Live Updates
-                    </a>
-                                </div>
-                            </div>
+                            <ul class="nav-links">
+                                <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
+                                <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
+                            </ul>
                         </div>
                         <script src="{% static 'js/menu.js' %}"></script>
                     </nav>
@@ -328,7 +309,7 @@
                         <div class="copyright">
                             <!-- Taqneeq 13.0, MPSTME. -->
 
-                            <div class="rectangle ">
+                            <div class="rectangle" id="live">
                                 <a href="#">
                                     <div class="campusam animation">
                                         LIVE UPDATES
@@ -373,27 +354,48 @@
     </div>
     <!-- /WRAPPER -->
 
-    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.fullPage.min.js' %}"></script>
-    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-    <script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
-    <script src="{% static 'js/jquery.swiper.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.inview.min.js' %}"></script>
-    <script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
-    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countdown.js' %}"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="{% static 'js/googlemap.js' %}"></script>
-    <script src="{% static 'js/validator.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
-
-    <script src="{% static 'js/main.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
-
-
 </body>
+
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fullPage.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+<script src="{% static 'js/jquery.swiper.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.inview.min.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="{% static 'js/googlemap.js' %}"></script>
+<script src="{% static 'js/validator.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+<script>
+    const live = document.getElementById('live');
+    const social = document.getElementById('FOOTER');
+    // const sidebar = document.getElementById('fp-nav');
+
+    window.onload = function() {
+
+    };
+
+    function hide() {
+        if (live.style.display == "none" && social.style.display == "none" && document.getElementById('fp-nav').style.display == "none") {
+            live.style.display = "block";
+            social.style.display = "block";
+            document.getElementById('fp-nav').style.display = "block";
+        } else {
+            live.style.display = "none";
+            social.style.display = "none";
+            document.getElementById('fp-nav').style.display = "none";
+        }
+    }
+</script>
 
 </html>

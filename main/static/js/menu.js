@@ -7,6 +7,8 @@ const navlinksbottom = document.querySelector('.nav-links-bottom');
 const linksbottom = document.querySelectorAll('.nav-links-bottom li');
 const navlinkstopmid = document.querySelector('.nav-links-top-mid');
 const navlinksbottommid = document.querySelector('.nav-links-bottom-mid');
+// const live = document.getElementById('live');
+// const social = document.getElementById('FOOTER');
 // const mainBody = document.querySelector('.mainBody');
 const bar3 = document.querySelector('.bar3');
 
@@ -37,6 +39,7 @@ function menuToggle() {
     });
     navlinkstopmid.classList.toggle('open');
     navlinksbottommid.classList.toggle('open');
+
 }
 
 menu.addEventListener('click', menuToggle);
@@ -47,3 +50,16 @@ menu.addEventListener('mouseenter', () => {
 menu.addEventListener('mouseleave', () => {
     bar3.classList.remove('hvr');
 });
+
+// document.getElementById('live').style.display = 'block';
+// social.style.display = 'block';
+
+// function hide(){
+//     if (live.style.display == "none" && social.style.display == "none") {
+//         live.style.display = "block";
+//         social.style.display = "block";
+//       } else {
+//         live.style.display = "none";
+//         social.style.display = "none";
+//       }
+// }
