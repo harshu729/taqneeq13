@@ -1098,7 +1098,7 @@ body .solar_systm .planet.earth .moon h3 {
 
 body .solar_systm .planet.saturn {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg");
-    box-shadow: 0 -290px 150px #e0cc9a inset, 0 0px 130px 40px rgb(234 205 199 / 60%) inset, 0 0px 23px 4px rgb(234 205 199 / 60%) inset, 0 -10px 130px rgb(127 188 171 / 60%);
+    box-shadow: 0 -320px 2000px #341d18 inset, 0 0px 300px 200px rgb(52 29 24 / 60%) inset, 0 0px 141px 4px rgb(52 29 24 / 60%) inset, 0 -10px 130px #341d18;
 }
 
 body .solar_systm .planet.saturn .moon h3 {
@@ -1155,7 +1155,7 @@ body .solar_systm .planet.saturn .enceladus {
 
 body .solar_systm .planet.uranus {
     background: url("https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg");
-    box-shadow: 0 -290px 150px #3f5e6b inset, 0 0px 130px 40px rgb(234 205 199 / 60%) inset, 0 0px 23px 4px rgb(234 205 199 / 60%) inset, 0 -10px 130px rgb(127 188 171 / 60%);
+    box-shadow: 0 -400px 2000px #6a3c35 inset, 0 0px 130px 40px rgb(193 67 36 / 60%) inset, 0 0px 23px 4px rgb(193 67 36 / 60%) inset, 0 -10px 130px #6a3c35;
 }
 
 body .solar_systm .planet.uranus .moon h3 {

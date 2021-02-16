@@ -41,6 +41,19 @@
     width: auto;
     border: 2px solid white;
     padding: 30px 53px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.theme-body {
+    border-top: 0;
+    width: auto;
+    border: 2px solid white;
+    padding: 30px 53px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-me {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 767px) {
