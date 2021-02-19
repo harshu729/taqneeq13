@@ -54,28 +54,32 @@
                             <div class="bar3 longanimbase longanim3"></div>
                         </div>
                         <ul class="nav-links">
-                            <li><a class="menuAfterClick1" href="index.html">Home</a></li>
+                            <li><a class="menuAfterClick1" href="#">Home</a></li>
                             <li><a class="menuAfterClick3" href="#">About TQ</a></li>
                             <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
-                            <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
+                            <li><a class="menuAfterClick2" href="#">Event Schedule</a></li>
 
-                            <li><a class="menuAfterClick5" href="#" target="_blank">Contact Us</a></li>
-                            <li><a class="menuAfterClick6 menu-hide" href="#">Our Team</a></li>
-                            <li><a class="menuAfterClick7 menu-hide" href="#">Sponsors</a></li>
-                            <li><a class="menuAfterClick8 menu-hide" href="#">MPSTME Tour</a></li>
+                            <!-- <li><a class="menuAfterClick5" href="#con">Contact Us</a></li> -->
+                            <li>
+                                <a class="menuAfterClick5" href="#con"></a>
+                            </li>
+                            <li><a class="menuAfterClick6" href="#">Our Team</a></li>
+                            <li>
+                                <a class="menuAfterClick7" href="#"></a>
+                            </li>
                         </ul>
                         <ul class="nav-links-top">
                             <li>
-                                <a class="menuAfterClick6" href="#">Our Team</a>
+                                <a class="menuAfterClick6" href="#"></a>
                             </li>
                             <li>
-                                <a class="menuAfterClick7" href="#">Sponsors</a>
+                                <a class="menuAfterClick7" href="#"></a>
                             </li>
                         </ul>
                         <ul class="nav-links-bottom">
                             <li>
-                                <a class="menuAfterClick8" href="#" style="position: relative; color: white; text-decoration: none; font-size: 2.3vw; font-family: 'Josefin Sans',sans-serif">MPSTME
-                                    Tour
+                                <a class="menuAfterClick8" href="#" style="position: relative; color: white; text-decoration: none; font-size: 2.3vw; font-family:'Josefin Sans',sans-serif">
+
                                 </a>
                             </li>
                         </ul>
@@ -86,12 +90,14 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="nav-links-bottom-mid">
-                            <ul class="nav-links">
-                                <li><a class="menuAfterClick4" href="{% url 'ourevents' %}"> Events</a></li>
-                                <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
-                            </ul>
-                        </div>
+                        <ul class="nav-links-bottom-mid">
+                            <li>
+                                <a class="menuAfterClick4" href="{% url 'ourevents' %}"></a>
+                            </li>
+                            <li>
+                                <a class="menuAfterClick2" href="#"></a>
+                            </li>
+                        </ul>
                         <script src="{% static 'js/menu.js' %}"></script>
                     </nav>
                     <!-- Menu -->
@@ -99,6 +105,7 @@
             </div>
         </header>
         <!-- /HEADER -->
+
         <!-- CONTENT -->
         <section class="site-content">
             <div id="fullpage" class="fullpage-wrapper">
@@ -106,12 +113,12 @@
                     <!-- Slide1-Home-->
                     <div class="sections" data-title="Home">
                         <div class="section-content">
-                            <div class="section-wrap section-center">
+                            <div class="section-wrap section-center" style="margin-top: -2.5rem;">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-xs-12 text-center">
                                             <h2 class="et-description"><img src="{% static 'img/taqneeqpatterntq.png' %}" alt="" class="tqFullDesign"></h2>
-                                            <hr>
+                                            <hr style="margin: 25px auto 10px auto;">
                                             <div class="et-description-small">Technical Fest of NMIMS' MPSTME</div>
                                         </div>
                                         <!-- col-xs-12 -->
@@ -158,7 +165,7 @@
                     <!-- Slide3-Theme-->
                     <div class="sections theme-block" data-title="Theme">
                         <div class="section-content">
-                            <div class="section-wrap section-center">
+                            <div class="section-wrap">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-xs-12 text-center about-content">
@@ -212,7 +219,7 @@
                     <!-- Slide5-Sponsors -->
 
                     <!-- Slide6-Contact -->
-                    <div class="sections contact-block" data-title="Contact">
+                    <div class="sections contact-block" data-title="Contact" id="con">
                         <div class="section-content">
                             <div class="section-wrap">
                                 <div class="container">
@@ -224,17 +231,16 @@
                                                 <div class="row m0">
                                                     <div class="col-sm-6 text-center">
                                                         <div class="contact-form border-gradient-visible-xs">
-                                                            <form id="contactform" class="form-styler" role="form" data-toggle="validator">
+                                                            <form id="contactform" class="form-styler" role="form" data-toggle="validator" autocomplete="no">
                                                                 <div class="form-group">
-                                                                    <input type="text" required placeholder="Name" name="name">
+                                                                    <input type="text" required placeholder="Name" name="fakename" autocomplete="no">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="email" required placeholder="Email" name="email">
+                                                                    <input type="email" required placeholder="Email" name="fakeemail" autocomplete="no">
                                                                 </div>
                                                                 <div class="contact-comment form-group">
-                                                                    <textarea placeholder="Message" required name="comment"></textarea>
+                                                                    <textarea placeholder="Message" required name="fakecomment" autocomplete="no"></textarea>
                                                                 </div>
-
                                                                 <div class="btn submit-form form-sender">
                                                                     <input type="submit" value="send">
                                                                     <span class="error"></span>
@@ -370,9 +376,9 @@
 <script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
 <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
 <script src="{% static 'js/jquery.countdown.js' %}"></script>
-
+<!-- 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script src="{% static 'js/googlemap.js' %}"></script>
+<script src="{% static 'js/googlemap.js' %}"></script> -->
 <script src="{% static 'js/validator.min.js' %}"></script>
 <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
 
@@ -387,16 +393,27 @@
     window.onload = function() {
 
     };
+    var a = 1;
 
     function hide() {
-        if (live.style.display == "none" && social.style.display == "none" && document.getElementById('fp-nav').style.display == "none") {
-            live.style.display = "block";
+        if (a == 0) {
+            live.style.display = "flex";
             social.style.display = "block";
-            document.getElementById('fp-nav').style.display = "block";
+            if ($(window).width() < 767) {
+                // document.getElementById('swiperNav').style.display = "block";
+            } else {
+                document.getElementById('fp-nav').style.display = "block";
+            }
+            a = 1;
         } else {
             live.style.display = "none";
             social.style.display = "none";
-            document.getElementById('fp-nav').style.display = "none";
+            if ($(window).width() < 767) {
+                // document.getElementById('swiperNav').style.display = "none";
+            } else {
+                document.getElementById('fp-nav').style.display = "none";
+            }
+            a = 0;
         }
     }
 </script>

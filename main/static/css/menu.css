@@ -27,11 +27,12 @@ nav {
     z-index: 10;
 }
 
-ul {
+nav ul {
     margin: 0;
+    padding: 0;
 }
 
-li {
+nav li {
     margin: 0;
 }
 
@@ -105,13 +106,15 @@ li {
     transition: all 0.5s ease 0.8s;
 }
 
-.nav-links li.fade {
+.nav-links li.fade,
+.nav-links-bottom-mid li.fade {
     opacity: 1;
     margin-left: 45%;
     margin-right: -20%;
 }
 
-.nav-links li a {
+.nav-links li a,
+.nav-links-bottom-mid li a {
     position: relative;
     color: white;
     text-decoration: none;
@@ -121,7 +124,8 @@ li {
     /* padding-left: 10%; */
 }
 
-.nav-links li a:after {
+.nav-links li a:after,
+.nav-links-bottom-mid li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,7 +139,8 @@ li {
     transition: all 0.4s;
 }
 
-.nav-links li a:hover:after {
+.nav-links li a:hover:after,
+.nav-links-bottom-mid li a:hover:after {
     width: 100%;
 }
 

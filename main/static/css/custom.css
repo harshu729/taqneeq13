@@ -44,6 +44,13 @@
     background: rgba(0, 0, 0, 0.4);
 }
 
+.about-body {
+    width: 90%;
+    border-top: 2px solid white;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
 .theme-body {
     border-top: 0;
     width: auto;
@@ -69,11 +76,21 @@
         margin-top: 0.6rem;
         font-family: "Chakra Petch", sans-serif;
         font-size: 1.4rem;
-        width: 50%;
-        margin: 30px auto 0 auto;
+        width: 100%;
+        margin: 0 auto;
         padding: 10px 0 0 0;
     }
     .about-body {
+        width: 90% !important;
+        border-top: 2px solid white;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .contact-me {
+        background: transparent;
+        padding: 0;
+    }
+    .theme-body {
         width: 90%;
         border-top: 2px solid white;
         font-size: 1.1rem;
