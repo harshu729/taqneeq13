@@ -2723,7 +2723,7 @@ _:-ms-fullscreen,
 
 @media (max-width: 767px) {
     #swiperNav {
-        bottom: 8px;
+        bottom: 0px;
         left: 0;
         right: 0;
     }

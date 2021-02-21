@@ -138,6 +138,11 @@
     color: #000 !important;
 }
 
+.ui.menu .item {
+    -webkit-transition: none;
+    transition: none;
+}
+
 .ui.attached.tabular.menu {
     height: 5.7em;
     overflow-x: auto;

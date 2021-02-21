@@ -6,5 +6,5 @@ app_name = "core"
 
 urlpatterns = [
     path('',views.core, name="teams-page"),
-    path('<str:dept>/',views.jsonitems,name="core-info"),
+    path('all/',views.jsonitems,name="core-info"),
 ]
