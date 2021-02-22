@@ -9,7 +9,7 @@ class Member(models.Model):
     deptName = models.CharField(max_length=200, blank=True)
     desc = models.TextField(max_length=400, blank=True)
     posnum = models.CharField(max_length=10, blank=True)
-    gifurl = models.URLField(max_length=1000, blank=True)
+    gifurl = models.URLField(max_length=100000000000000000000000000000000, blank=True)
 
     def __str__(self):
         return self.name + f' ({self.deptName})'

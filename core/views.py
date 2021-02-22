@@ -8,7 +8,7 @@ app_name = "core"
 # Create your views here.
 
 def jsonitems(request):
-    coreinfo = serializers.serialize("json",Member.objects.all().filter().order_by('posnum','name'))
+    coreinfo = serializers.serialize("json",Member.objects.all().filter().order_by('posnum','position','name'))
     coreinfo = json.loads(coreinfo)
     return JsonResponse(coreinfo,safe=False)
 

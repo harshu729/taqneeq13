@@ -124,7 +124,7 @@
 
     <div class="coresegment">
         <div class="ui top attached tabular menu" id="coreTab">
-            <a class="item active" data-tab="SC">Super Core</a>
+            <a class="item active" data-tab="Supercore">Super Core</a>
             <a class="item" data-tab="Admin">Admin</a>
             <a class="item" data-tab="AGM">Artist & Guest Management</a>
             <a class="item" data-tab="DC">Digital Creatives</a>
@@ -139,104 +139,8 @@
             <a class="item" data-tab="TS">Tech Support</a>
         </div>
 
-        <div class="ui bottom attached tab segment active" data-tab="SC">
-            <div class="core-grid" id="SC">
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Harshit Sharma</div>
-                            <div class="corePost">Sub-Head</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Name</div>
-                            <div class="corePost">Post</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Name</div>
-                            <div class="corePost">Post</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Name</div>
-                            <div class="corePost">Post</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Name</div>
-                            <div class="corePost">Post</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="core-item animated2s fadeIn">
-                    <div class="coreBlock">
-                        <div class="coreImage">
-                            <div class="coreImg">
-                                <img src="{% static 'img/core/CoreName.jpg' %}">
-                            </div>
-                            <div class="coreGif" style="display:none;">
-                                <img src="{% static 'img/core/coreNameGif.gif' %}">
-                            </div>
-                        </div>
-                        <div class="coreInfo">
-                            <div class="coreName">Name</div>
-                            <div class="corePost">Post</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="ui bottom attached tab segment active" data-tab="Supercore">
+            <div class="core-grid" id="Supercore">
             </div>
         </div>
 
@@ -346,7 +250,7 @@
     function getcore() {
 
         allDept = {
-            "SC": "Super Core",
+            "Supercore": "Super Core",
             "Admin": "Admin",
             "AGM": "Artist & Guest Managament",
             "DC": "Digital Creatives",
@@ -391,7 +295,7 @@
                     coreGif.style.display = "none";
 
                     var image2 = document.createElement('img');
-                    image2.setAttribute('src', "{% static 'img/core/coreNameGif.gif' %}");
+                    image2.setAttribute('src', ""+items[i].fields.gifurl);
                     coreGif.appendChild(image2);
 
                     coreImage.appendChild(coreImg);
