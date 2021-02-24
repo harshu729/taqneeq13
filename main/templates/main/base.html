@@ -84,14 +84,21 @@
             <div class="bar3 longanimnd3"></div>
         </div>
         <ul class="nav-links">
-            <li><a class="menuAfterClick1" href="{% url 'main:landing-page' %}">Home</a></li>
-            <li><a class="menuAfterClick3" href="#">About TQ</a></li>
-            <li><a class="menuAfterClick4" href="{% url 'events:ourevents' %}">Events</a></li>
-            <li><a class="menuAfterClick2 " href="#">Event Schedule</a></li>
+            <li id="li1"><a class=" menuAfterClick1" href="#">Home</a></li>
+            <li>
+                <a class="menuAfterClick3" href="#"></a>
+            </li>
+            <li><a class="menuAfterClick4" href="{% url 'events:ourevents' %}"> Events</a></li>
+            <li><a class="menuAfterClick2" href="{% url 'events:liveupdates' %}">Event Schedule</a></li>
 
-            <li><a class="menuAfterClick5" href="#" target="_blank">Contact Us</a></li>
-            <li><a class="menuAfterClick6 menu-hide" href="#">Our Team</a></li>
-            <li><a class="menuAfterClick7 menu-hide" href="#">Sponsors</a></li>
+            <!-- <li><a class="menuAfterClick5" href="#con">Contact Us</a></li> -->
+            <li>
+                <a class="menuAfterClick5" href="#"></a>
+            </li>
+            <li><a class="menuAfterClick6" href="{% url 'core:teams-page' %}">Our Team</a></li>
+            <li>
+                <a class="menuAfterClick7" href="#"></a>
+            </li>
         </ul>
     </nav>
     <!-- Menu -->
