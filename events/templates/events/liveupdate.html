@@ -10,22 +10,6 @@
     integrity="sha512-NtvxKmBWfr6sEZ3y/qV4DTXPEXpP/VZZV5BEaCFxUukf7/cyktgYpfsxs2ERvisbDXfnLJfswd2DYEj0h+qAFA=="
     crossorigin="anonymous" />
 <link rel="stylesheet" href="{% static '/css/liveupdates.css' %}">
-<style>
-    @media only screen and (min-width: 767px) {
-
-        .nav-links li.fade,
-        .nav-links-bottom-mid li.fade {
-            opacity: 1;
-            margin-center: 15%;
-            margin-right: -20%;
-        }
-
-        .nav-links {
-            background: url(http://127.0.0.1:8000/static/css/../img/walking-man.gif) right top no-repeat, rgba(0, 0, 0, 0.75);
-            background-size: contain;
-        }
-    }
-</style>
 {% endblock %}
 
 
@@ -56,8 +40,6 @@
                     <td><a href="{{event.ongoingurl}}">Link</a></td>
                 </tr>
                 {% endfor %}
-
-
 
             </tbody>
         </table>

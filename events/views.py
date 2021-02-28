@@ -22,3 +22,7 @@ def eachevent(request,dept):
 def liveupdates(request):
     e = Event.objects.all().filter(ongoing=True).order_by('name')
     return render(request,'events/liveupdate.html',{'events':e})
+
+
+def pingo(request):
+    return render(request,'events/bingo.html')

@@ -27,7 +27,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "taqneeq13.settings")
 SECRET_KEY = 'eibth37&68)t0p0zfqi!znl+&&+88lfw!o)c&9s9omkg59%uan'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 

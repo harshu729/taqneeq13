@@ -1187,7 +1187,7 @@ body .solar_systm .planet.uranus .miranda {
     left: 100px;
     top: -100px;
     transform: scale(0.4);
-    background: url("http://celestia.simulatorlabbs.com/CelSL/textures/medres/miranda.jpg");
+    background: url("https://celestia.simulatorlabbs.com/CelSL/textures/medres/miranda.jpg");
     z-index: -1;
     box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -1205,7 +1205,7 @@ body .solar_systm .planet.uranus .umbriel {
     left: 900px;
     top: -70px;
     transform: scale(0.4);
-    background: url("http://celestia.simulatorlabbs.com/CelSL/textures/medres/miranda.jpg");
+    background: url("https://celestia.simulatorlabbs.com/CelSL/textures/medres/miranda.jpg");
     z-index: -1;
     box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -1253,7 +1253,7 @@ body .solar_systm .planet.neptune .proteus {
     left: 400px;
     top: -210px;
     transform: scale(0.45);
-    background: url("http://2.bp.blogspot.com/-NrsDNbSk8TU/VKmLHdOgw0I/AAAAAAAAHvY/dod1Kqv2Ta8/s1600/NereidTxt2.jpg");
+    background: url("https://2.bp.blogspot.com/-NrsDNbSk8TU/VKmLHdOgw0I/AAAAAAAAHvY/dod1Kqv2Ta8/s1600/NereidTxt2.jpg");
     z-index: -1;
     box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -1262,7 +1262,7 @@ body .solar_systm .planet.neptune .nereid {
     left: 900px;
     top: -70px;
     transform: scale(0.4);
-    background: url("http://4.bp.blogspot.com/-3eyaVs4az74/VKmMpLo6FYI/AAAAAAAAHvs/zK5NTllQYnk/s1600/NereidTxt.jpg");
+    background: url("https://4.bp.blogspot.com/-3eyaVs4az74/VKmMpLo6FYI/AAAAAAAAHvs/zK5NTllQYnk/s1600/NereidTxt.jpg");
     z-index: -1;
     box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -1341,6 +1341,13 @@ body .solar_systm .planet_description a {
 body .solar_systm .planet_description h2 {
     margin-top: 60px;
     margin-bottom: 6px;
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    body .solar_systm .planet_description h2 {
+        margin-top: 30px;
+    }
 }
 
 body .solar_systm .planet_description p {
